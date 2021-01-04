@@ -137,6 +137,8 @@ STATICFILES_DIRS = [
     Path(BASE_DIR, 'btre/static')
 ]
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Media Folder Settings
 MEDIA_ROOT = Path(BASE_DIR, 'media')
