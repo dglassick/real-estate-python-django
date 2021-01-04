@@ -150,7 +150,6 @@ MESSAGE_TAGS ={
 # EMAIL_HOST_PASSWORD = 'password here'
 # EMAIL_USE_TLS=True
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
