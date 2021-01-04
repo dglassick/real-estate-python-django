@@ -24,7 +24,11 @@ SECRET_KEY = '3gnv5y1mcbga_5oi021d=#vcvk_=xh*b1z22c*q8hrwyl97epx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://obscure-bayou-02886.herokuapp.com/',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
